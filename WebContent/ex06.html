@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+
+<body>
+	<p id="p1"> abcdefghijklmn </p>
+	<p id="p2"> 학교종이 땡땡땡 abcdefg </p>
+</body>
+<script type="text/javascript">
+	$("#p1").text("<strong>가나다라마바사</strong>"); //.text는 태그로 인식안해서 글로 나온다.
+	
+	var str = $("#p2").text(); //값이 있으면 넣어주고 값이 없으면 값을 가져온다
+	console.log(str);
+</script>
+	
+
+</html>

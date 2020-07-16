@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<input id="btn" type="button" VALUE="js테스트버튼" />
+		<h1 id="display">이름출력영역</h1>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+//버튼 찾기 1
+//버튼 클릭 이벤트 찾기 2
+//클릭했을때 기능정의 3
+//변경할 부분을 찾기
+//값 변경
+
+	//var tmp =$("#btn") 1
+	//console.log(tmp);
+	
+	/* $("#btn").on("click", function(){ 2
+		console.log("클릭");
+	}); */
+	
+	$("#display").on("mouseenter", function(){ 
+		console.log("클릭");
+		//$("#display").html("<font color='blue'>박지민</font>") // 3,4,5 html과 text비교
+		//$("#display").text("<font color='blue'>박지민</font>")
+		$("#display").css("color", "red");
+		$("#display").text("박지민");
+	});
+</script>
+
+
+</html>

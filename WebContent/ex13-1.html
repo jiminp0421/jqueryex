@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<h1>계산기</h1>
+	
+	<input id="left" type="text" value=""> + 
+	<input id="right" type="text" value=""> =
+	<input id="sum" type="text" value=""> 
+	<button id="btnCal">계산하기</button>
+
+
+</body>
+
+<script type="text/javascript">
+	//이벤트 기능만 알면 쓸수있다 mouseenter, click 등
+	$("#right").on("keyup", function(){
+		console.log("클릭");
+		var left =$("#left").val();
+		var right =$("#right").val();
+		var sum = parseInt(left) + parseInt(right);
+		$("#sum").val(sum);
+	})
+	
+	
+	
+	
+
+
+</script>
+
+</html>
+

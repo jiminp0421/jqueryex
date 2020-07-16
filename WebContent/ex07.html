@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+
+<body>
+	<p id="p1"> abcdefghijklmn </p>
+	<p id="p2"> 학교종이 땡땡땡<br> abcdefg </p>
+</body>
+
+<script type="text/javascript">
+	$("#p1").html("<strong>가나다라마바사</strong>")
+	//$("#p1").text("<strong>가나다라마바사</strong>")
+	
+	var str = $("#p2").html(); //html포함해서 다 가져온다 태그까지
+	console.log(str);
+	
+	var str01 = $("#p2").text(); //태그를 제외하고 text만 가져온다
+	console.log(str01);
+
+
+</script>
+	
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<ul>
+		<li data-no="1" data-userId="aaa" id="first" class="red">첫번째 아이템입니다.</li>
+		<li data-no="2" data-userId="bbb" id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li data-no="3" data-userId="ccc" id="third" class="del">세번째아이템입니다.</li>
+		<li data-no="4" data-userId="ddd"><strong>네번째 아이템입니다.</strong></li>
+		
+	</ul>
+
+</body>
+
+<script type="text/javascript">
+	/* $("li").on("click", function(){
+		console.log("li 클릭");
+	}); */
+	/* $("#first").on("click", function(){
+		console.log("li 클릭");
+		$("#first").text("abcde");
+	}); */
+	/* $("li").on("click", function(){
+		console.log("li 클릭");
+		$("#first").text("abcde");
+	}); */
+	/* $("li").on("click", function(){ //this는 이벤트때만 사용한다. this의 사용법 알기
+		console.log("li 클릭");
+		var thisTag = $(this);
+		thisTag.text("abcdef")
+		console.log(thisTag);
+	}); */
+	$("li strong").on("click", function(){
+		console.log("li 클릭");
+		//$(this).text("12345");
+		
+		/* console.log("=========strong이 있는 li가져오기=======")
+		$("li strong").on("click", function(){
+		console.log("li 클릭");
+		var $this =$(this);
+		var text = $this.text();
+		console.log(text);
+		});
+		console.log("================") */
+		
+		//텍스트가져오기
+		//$this.text("12345");
+		//var thisTag = $(this);
+		//thisTag.text("abcdef")
+		//console.log(thisTag);
+		
+		//속성가져오기
+		//var attr = $this.attr("class");
+		//console.log(attr);
+		//var no = $this.attr("data-no")
+		//console.log(no);
+		/* var no = $this.data("no") //"no"는 작명한이름
+		console.log(no);
+		
+		var userId = $this.data("userid")
+		console.log(userId); */
+	});
+</script>
+
+
+</html>
